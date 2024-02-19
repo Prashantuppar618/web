@@ -3,15 +3,12 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="/CSS/hr.css" />
-    <link rel="icon" type="image/x-icon" href="images/icon.ico" />
+    <link rel="stylesheet" href="hr.css" />
+    <link rel="icon" type="image/x-icon" href="icon.ico" />
     <title>The HR event</title>
     <style>
-      h2 {
-        color: darkseagreen;
-      }
       body {
-        background-image: url("images/backhr.jpg");
+        background-image: url("backhr.jpg");
         background-attachment: fixed;
         background-repeat: no-repeat;
         background-size: cover;
@@ -19,25 +16,21 @@
     </style>
   </head>
   <body>
+    <ul>
+      <li><a href="#Register">Register</a></li>
+      <li><a href="#Contact">Contact</a></li>
+      <li><a href="#Media">Media</a></li>
+      <li><a href="#About">About</a></li>
+    </ul>
     <header>
-      <h1
-        style="
-          background-color: rgb(144, 172, 29);
-          font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-          font: 200;
-          text-align: center;
-        "
-        id="heading"
-      >
-        The registration form
-      </h1>
+      <h1 id="heading">The registration form</h1>
     </header>
-    <hr />
+
     <footer>
-      <p style="background-color: rgb(66, 51, 63)" title="description of event">
-        The invento is all about new exprience to everyone. This year its going
-        to be more exiting and more fun and triller. Just do not think more just
-        get into it.
+      <p title="description of event">
+        The invento &#128373 is all about new exprience to everyone &#128516. This year its going
+        to be more exiting &#128511 and more fun and triller &#128520. Just do not think more 
+        get into it &#128526.
       </p>
     </footer>
     <!--<picture>
@@ -55,43 +48,50 @@
       function instapost() {
         confirm("Are you want to visit insta page of kle");
       }
+
+      function light(sw) {
+        var pic;
+        if (sw == 0) {
+          pic = "bulboff.jpeg";
+        } else {
+          pic = "bulbon.jpg";
+        }
+
+        document.getElementById("bulb1").src = pic;
+      }
     </script>
+    <noscript>Sorry, your browser does not support JavaScript!</noscript>
     <map name="HRmap">
       <area shape="rect" coords="169,178,1710,1222" />
     </map>
-    <a
-      href="mailto:nobita6354@gmail.com"
-      target="_self"
-      title="The email of user"
-    >
-      <img
-        src="images/HRevent.jpg"
-        alt="Its the image of HRevent"
-        height="600"
-        width="750"
-        style="float: left"
-        usemap="#HRmap"
-        onclick="myjs()"
-      />
-    </a>
-    <h2>The media guide:</h2>
+    <figure>
+      <a
+        href="mailto:nobita6354@gmail.com"
+        target="_self"
+        title="The email of user"
+      >
+        <img
+          src="HRevent.jpg"
+          alt="Its the image of HRevent"
+          height="100%"
+          width="100%"
+          style="float: left"
+          usemap="#HRmap"
+          onclick="myjs()"
+        />
+      </a>
+      <figcaption>Fig 1.HR poster</figcaption>
+    </figure>
+    <h2>The media guide:&#128173</h2>
     <br />
     <a
       href="https://www.instagram.com/klescetmedia/#"
       style="font-size: larger"
       target="_blank"
       onclick="instapost()"
-      >click here</a
+      >click here </a
     >
-    <!--
-    <pre style="text-align: center">
-      The events break up
 
-      The events divided into 3 rounds - 
-      # Day <sup>0</sup> - 1st round
-      # Day <sup>1</sup> - 2nd round
-      # Day <sup>2</sup> - final round
-    </pre> -->
     <br />
     <br />
 
@@ -101,7 +101,7 @@
         <col span="1" style="background-color: rgb(223, 203, 154)" />
       </colgroup>
       <caption style="color: rgb(115, 109, 205)">
-        Events round timing
+        Events round timing &#128064 &#128392
       </caption>
       <tr>
         <th>DAY</th>
@@ -125,15 +125,74 @@
       </tr>
     </table>
 
-    <h2>Address</h2>
+    <h2>Address &#127979</h2>
     <address>
       <b>msscet</b><br />
       Anagol<br />
       Belagavi
     </address>
 
+    <div class="para">
+      <pre>
+        <span class="des">Recruitment and Staffing:</span> HR is involved in the
+        recruitment process, from creating job descriptions and posting job
+        openings to conducting interviews and selecting candidates. They play a
+        critical role in ensuring that the organization attracts and hires
+        qualified individuals. Employee Relations: HR is responsible for
+        fostering positive relationships between employees and the organization.
+        This includes addressing workplace conflicts, handling disciplinary
+        actions, and promoting a healthy work environment.
+        <span class="des">Training and Development:</span> HR is involved in
+        designing and implementing training programs to enhance the skills and
+        capabilities of employees. This can include onboarding programs for new
+        hires, ongoing professional development, and skills training.
+      </pre>
+    </div>
+
+    <iframe
+      src="document.html"
+      name="github_a"
+      height="800"
+      width="100%"
+      title="youtube reference"
+      style="border: 2px solid rgb(10, 10, 10)"
+    >
+    </iframe>
+
+    <a href="https://youtube.com/" target="github_a">Github project</a>
+    <br />
+    <button
+      type="button"
+      onclick="document.getElementById('demo').innerHTML=Date()"
+    >
+      click to display date and time
+    </button>
+
+    <p id="demo"></p>
+
+    <hr />
+
+    <p>Bulb on off demo</p>
+
+    <img
+      id="bulb1"
+      src="bulboff.jpeg"
+      alt="bulb image"
+      width="100"
+      height="150"
+    />
+    <p>
+      <button type="button" onclick="light(1)">Light on</button>
+      <button type="button" onclick="light(0)">light off</button>
+    </p>
+
     <h3>Thank for visiting..!</h3>
 
     <a href="#heading">Go to top</a>
   </body>
 </html>
+
+  
+    
+     
+      
