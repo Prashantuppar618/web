@@ -1,0 +1,94 @@
+#heading
+{
+          font-family: cursive; 
+          font: 200;
+          text-align: center;
+          color: rgb(154, 205, 25);
+        
+}
+
+.para
+{
+    color: black;
+}
+.des
+{
+    color: blue;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+ul
+{
+    list-style-type: none;
+    margin-bottom: 1%;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgb(15, 15, 14);
+}
+li
+{
+    float: right;
+    margin: auto;
+   
+}
+li a
+{
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    text-decoration: none;
+}
+li a:hover
+{
+    background-color: rgb(230, 210, 224);
+}
+h3{
+    color:rgb(253, 253, 250);
+}
+a:link
+{
+    color: green(211, 170, 65);
+
+}
+a:visited
+{
+    color:rgb(228, 205, 75);
+    ;
+}
+a:hover
+{
+    color:rgb(87, 173, 223);
+    text-decoration: underline;
+}
+a:active
+{
+    color: yellow;
+    text-decoration: underline;
+}
+table
+{
+    border: 5px solid black;
+    border-collapse: collapse;
+    border-spacing: 30px;
+    text-align: center;
+   
+}
+
+/*th,td
+{
+    background-color: rgb(226, 244, 238);
+    height: 15px;
+    width: 100px;
+    text-align: center;
+    padding: auto;
+    border: 5px solid black;
+    border-collapse: collapse
+}*/
+tr:hover {
+    background-color: rgb(157, 211, 211);
+  }
+  tr{
+    border-bottom: 1px solid #ddd;
+  }
+
+
